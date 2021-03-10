@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/header/logo1.png" alt="" class="header-logo">
+            <img src="img/header/logo2.png" alt="" class="header-logo">
+          </a>
+          <button class="hamburger hamburger--squeeze navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="navbar-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link navbar-link-active" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link" href="#">Extension</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-link" href="#">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="navbar-btn" type="submit">sign up</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-elem">
+        <div class="header-info">
+          <h1 class="header-title">
+            lorem Ipsum <br> Dolor sit amet
+          </h1>
+          <p class="header-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="header-btn-wrap">
+            <button class="header-btn header-btn-first">Buy now</button>
+            <button class="header-btn header-btn-second">Try for free</button>
+          </div>
+        </div>
+        <div class="header-video-wrap">
+          <iframe class="header-video" width="100%" height="100%" src="https://www.youtube.com/embed/KsXahlKbdNQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <article class="article">
+    <div class="container">
+      
+      <div class="article-info">
+        <h1 class="article-info-title">
+          Easy & Useful
+        </h1>
+        <p class="article-info-text">
+          Project Management Tool
+        </p>
+        <p class="article-info-desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+        </p>
+      </div>
+
+      <ul class="article-list">
+        <li class="article-item">
+          <i class="article-icon article-icon-calendar far fa-calendar-alt"></i> 
+          <h1 class="article-title">
+            Title Goes Here
+          </h1>
+          <p class="article-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li class="article-item">
+          <i class="article-icon article-icon-man fas fa-user-alt"></i> 
+          <h1 class="article-title">
+            Title Goes Here
+          </h1>
+          <p class="article-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+        <li class="article-item">
+          <i class="article-icon article-icon-shield fas fa-user-shield"></i> 
+          <h1 class="article-title">
+            Title Goes Here
+          </h1>
+          <p class="article-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </li>
+      </ul>
+
+      <button class="article-btn">Get started</button>
+
+    </div>
+  </article>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script>
+    var hamburger = document.querySelector(".hamburger");
+    var nav = document.querySelector(".nav");
+    hamburger.addEventListener("click", function () {
+      hamburger.classList.toggle("is-active");
+      nav.classList.toggle("is-active");
+    });
+  </script>
+</body>
+</html>
