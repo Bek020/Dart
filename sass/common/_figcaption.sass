@@ -1,0 +1,80 @@
+.figcaption
+  font-family: 'Raleway', sans-serif
+  background: url(../img/figcaption/background.png) no-repeat
+  background-size: cover 
+  max-width: 100%
+  margin-top: 50px
+
+  &-wrap
+    +laptop
+      +grid(repeat(2, 1fr))
+
+  &-info
+    padding: 130px 0
+
+    &-title
+      font-size: 45px
+      font-weight: bold
+      color: $secondColor
+
+    &-desc
+      max-width: 515px
+      font-size: 15px
+      color: $secondColor
+
+    &-btn 
+      margin: 0 auto
+      margin-top: 80px
+      padding: 20px 25px
+      background: $mainColor
+      color: $secondColor
+      font-size: 15px
+      text-transform: uppercase
+      font-weight: bold
+      border-radius: 5px
+      border: none
+
+      &:hover
+        background: #05172b
+
+
+  &-user
+    padding: 70px 0
+
+    &-first
+      +desktop
+        display: flex
+        position: relative
+
+    &-second
+      +desktop
+        display: flex
+        position: relative
+
+    &-img
+      +desktop
+        position: absolute
+        top: 40%
+        bottom: 50%
+        left: -80px
+
+      &-wrap
+        text-align: center
+
+    &-block 
+      margin-top: 20px
+      background: $secondColor
+      border-radius: 10px
+      box-shadow: 0px 0px 14px 1px #bbbbbb
+
+    &-title
+      font-size: 18px
+      font-weight: bold
+      color: $mainColor
+      padding: 20px
+
+    &-desc
+      padding: 0 20px 20px
+      color: $descColor
+
+    

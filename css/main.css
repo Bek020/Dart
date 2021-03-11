@@ -122,6 +122,9 @@ html, body {
   margin: 50px 0;
   text-align: center;
 }
+.article-info {
+  text-align: center;
+}
 .article-info-title {
   font-weight: bold;
   font-size: 45px;
@@ -211,6 +214,221 @@ html, body {
 }
 .article-btn:hover {
   background: #1dc299;
+}
+
+.static {
+  text-align: left;
+}
+.static-list {
+  padding: 50px 0;
+  list-style: none;
+}
+@media screen and (min-width: 480px) {
+  .static-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .static-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.static-item {
+  display: flex;
+  max-width: 100%;
+  max-height: 150px;
+  padding: 30px 40px;
+}
+@media screen and (min-width: 1200px) {
+  .static-item {
+    padding: 30px 50px;
+  }
+}
+.static-item-first {
+  background: #80D8FF;
+}
+.static-item-second {
+  background: #82B1FF;
+}
+.static-item-third {
+  background: #B388FF;
+}
+.static-item-fourth {
+  background: #EA80FC;
+}
+.static-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  color: #80D8FF;
+  font-size: 23px;
+}
+.static-icon-wrap {
+  position: relative;
+}
+.static-desc {
+  padding: 1px 10px;
+  font-size: 18px;
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+.section {
+  font-family: "Raleway", sans-serif;
+}
+.section-info {
+  margin: 0 auto;
+  max-width: 555px;
+  text-align: center;
+}
+.section-info-title {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.section-info-desc {
+  color: var(--desc-color);
+}
+
+.accordion-wrap {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 1px #bbbbbb;
+  transition: 0.5s;
+}
+.accordion-btn {
+  background: #ffffff;
+  color: var(--main-color);
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  outline: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-btn-active {
+  transition: 0.6s;
+}
+.accordion-panel {
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .accordion-panel {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1fr;
+  }
+}
+.accordion-panel-img {
+  width: 100%;
+  height: 100%;
+}
+.accordion-panel-img-wrap {
+  max-width: 250px;
+  max-height: 155px;
+}
+.accordion-panel-desc {
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .accordion-panel-desc {
+    grid-column: 2/4;
+    padding-left: 20px;
+  }
+}
+
+.figcaption {
+  font-family: "Raleway", sans-serif;
+  background: url(../img/figcaption/background.png) no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  margin-top: 50px;
+}
+@media screen and (min-width: 992px) {
+  .figcaption-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.figcaption-info {
+  padding: 130px 0;
+}
+.figcaption-info-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--second-color);
+}
+.figcaption-info-desc {
+  max-width: 515px;
+  font-size: 15px;
+  color: var(--second-color);
+}
+.figcaption-info-btn {
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px 25px;
+  background: var(--main-color);
+  color: var(--second-color);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+.figcaption-info-btn:hover {
+  background: #05172b;
+}
+.figcaption-user {
+  padding: 70px 0;
+}
+@media screen and (min-width: 1200px) {
+  .figcaption-user-first {
+    display: flex;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .figcaption-user-second {
+    display: flex;
+    position: relative;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .figcaption-user-img {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: -80px;
+  }
+}
+.figcaption-user-img-wrap {
+  text-align: center;
+}
+.figcaption-user-block {
+  margin-top: 20px;
+  background: var(--second-color);
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 1px #bbbbbb;
+}
+.figcaption-user-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-color);
+  padding: 20px;
+}
+.figcaption-user-desc {
+  padding: 0 20px 20px;
+  color: var(--desc-color);
 }
 
 /*!
