@@ -41,22 +41,7 @@
   &-user
     padding: 70px 0
 
-    &-first
-      +desktop
-        display: flex
-        position: relative
-
-    &-second
-      +desktop
-        display: flex
-        position: relative
-
     &-img
-      +desktop
-        position: absolute
-        top: 40%
-        bottom: 50%
-        left: -80px
 
       &-wrap
         text-align: center
@@ -77,4 +62,37 @@
       padding: 0 20px 20px
       color: $descColor
 
-    
+  &-icon
+    position: absolute
+    left: 48%
+    right: 50%
+    color: $secondColor
+    font-size: 35px
+
+    &-up
+      position: absolute
+      left: 47%
+      right: 50%
+      color: $secondColor
+      font-size: 35px
+      top: 10px
+      z-index: 10
+
+    &-down
+      position: absolute
+      left: 47%
+      right: 50%
+      color: $secondColor
+      font-size: 35px 
+      bottom: 10px
+      z-index: 10
+
+.swiper-container-figcaption
+  position: relative
+  max-height: 900px
+
+  +phone
+    max-height: 700px
+
+  +desktop
+    max-height: 650px
